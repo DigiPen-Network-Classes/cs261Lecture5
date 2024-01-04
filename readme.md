@@ -15,6 +15,14 @@ Then go on to briefly introduce Dynamic Typing, at least as far as Node/JS is co
 
 See `ItsDynamic.js` for a short demo of this.
 
-## 5.0 Hello World Basic
+## 5.0 Hello World Wide Web (basic)
 
-Next: 
+Basic Express web app. Then see 5.1 which cleans things up a bit.
+
+## 5.2 Plus Moment
+
+Another example, showing how to include and interact with more packages.
+
+## 5.3 CS260 Server (Simplified)
+
+Example of a TCP server, somewhat like what we used in CS 260.

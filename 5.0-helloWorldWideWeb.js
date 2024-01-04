@@ -1,12 +1,11 @@
+
+// Included here because you'll see lots of examples like this:
 // require('modulename'); -- the old way.  Do one or the other, but never both! 
 //const http = require("http");
 
 // import {} from ''; -- the new hotness
 import express from 'express';
 const app = express();
-
-import util from 'util';
-
 const port = 4242;
 
 // a function we'll call when the server starts
@@ -19,12 +18,6 @@ function handleServerStart() {
 function handleServerRequests(req, res, next) {
 
     console.log("handle server request (middleware)");
-    //console.log(`handled: ${util.inspect(req)}`);
-
-// doesn't work (circular references) but WILL be useful
-// for other types of objects.
-//    console.log(`${JSON.stringify(req)}`);
-
     // note: this is important!
     // (otherwise the request processing will 'stall')
     next();
