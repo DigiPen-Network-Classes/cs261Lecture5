@@ -2,11 +2,12 @@ import tcp from 'net';
 const port = 8888
 
 // old way of doing async programming:
-const tcpServer = tcp.createServer().on('connection', (socket) => {
+// on (event) do (callback function)
+const tcpServer = tcp.createServer().on(/* event name */ 'connection', /* call this function */(socket) => {
 	socket.setEncoding('utf8')
 	console.log(`Connection from ${socket.remoteAddress} on port ${socket.remotePort}`)
 
-	socket.on('data', (str) => {
+	socket.on(/* event */'data', /* callback */(str) => {
 		console.log(`Data from ${socket.remoteAddress} on port ${socket.remotePort}: ${str}`)
 
 		socket.write(`You sent ${str}`, () => {

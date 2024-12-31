@@ -1,3 +1,15 @@
+// create a variable -- it is undefined
+let foo;
+console.log(`foo is initialized as ${typeof(foo)}`);
+
+foo = 42;
+console.log(`foo is now ${foo}, a ${typeof(foo)}`);
+
+foo = "blargh!";
+console.log(`foo is now a string: ${foo}, a ${typeof(foo)}`);
+
+foo += 42;
+console.log(`foo is now ${foo}, a ${typeof(foo)}`);
 
 // let's declare some variables!
 let str = "this is a string";
@@ -20,11 +32,13 @@ someNumber = 42;
     let hidden = "scoped"; 
     var secretGlobal = "global";
 }
+// global is global (because var)
+// hidden falls out of scope (because let)
 //console.log(`${hidden} ${secretGlobal}`); // ReferenceError: hidden is not defined
 
 // this is a comment
 /* this is also a comment */
 
+console.log("no semicolons!")
 console.log("Hello, World!"); // semicolons are optional, but you should use them.
-// (or at least consistently NOT use them!)
 console.log(`Backticks allow you do to this: ${str}, ${someNumber}`);
