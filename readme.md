@@ -1,3 +1,7 @@
+# "JavaScript is Weird"
+Code that accompanies lecture 5 and 7 from CS 261, introducing JavaScript and Node to C++ programmers.
+Various notes as I have time to update them.
+
 # Node Intro Demo
 
 # Hello World Wide Web
