@@ -34,15 +34,16 @@ const getIndexPage = function (request, response) {
 
 // another function
 const helloName = function (name) {
-    console.log(`Hello, ${name}}`)
+    console.log(`Hello, ${name}}`);
 }
+console.log("Example function-object call:");
 helloName("YourName");
 
 // Express Middlware:
-// that gets called on all requests:
+// this gets called on all requests
 app.use(handleServerRequest);
 
-// Express Route
+// one Express Route
 // a handler for a specific path
 app.get('/', getIndexPage);
 
